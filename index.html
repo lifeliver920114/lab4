@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<input type="button" value="first to input" onclick="alert(num1);">
+	<input type="button" value="second to input" onclick="alert(num);">
+
+	<script>
+		var num1;
+		num1=window.prompt('Please enter a number');
+		var num2;
+		num2=window.prompt('Please enter a number');
+		if (num1>num2){
+			document.writeLn('<h1>first_input>second_input</h1>');
+			document.body.style.backgroundColor='lightblue';
+		} else if (num2>num1){
+			document.writeLn('<h1>second_input>first_input</h1>');
+			document.body.style.backgroundColor='lightgreen';
+		} else{
+			document.writeLn('<h1>first_input=second_input</h1>');
+			document.body.style.backgroundColor='lightyellow'
+		}
+	</script>
+</body>
+</html>
